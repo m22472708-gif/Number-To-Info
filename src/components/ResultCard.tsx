@@ -103,7 +103,7 @@ Gender: ${result.gender}`;
             <p className="text-[11px] font-medium text-slate-400 tracking-wider uppercase">
               FULL NAME (পূর্ণ নাম)
             </p>
-            <h2 className="text-2xl font-bold text-white tracking-tight mt-0.5">
+            <h2 className="text-2xl font-bold text-white tracking-tight mt-0.5 break-words">
               {result.fullName}
             </h2>
 
@@ -179,11 +179,13 @@ Gender: ${result.gender}`;
         <div className="divide-y divide-slate-800/60 text-xs">
           {/* Full Name */}
           <div className="py-2.5 flex items-center justify-between gap-3">
-            <div className="flex items-center gap-2 text-slate-400">
+            <div className="flex items-center gap-2 text-slate-400 shrink-0">
               <User className="w-3.5 h-3.5 text-sky-400" />
               <span>Full Name</span>
             </div>
-            <span className="font-semibold text-white text-right">{result.fullName}</span>
+            <span className="font-semibold text-white text-right break-words max-w-[65%]">
+              {result.fullName}
+            </span>
           </div>
 
           {/* Phone Number */}

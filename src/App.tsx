@@ -123,12 +123,15 @@ export default function App() {
               /* Empty State Container (Matching Screenshot 2) */
               <div className="w-full max-w-lg mx-auto px-4 mt-6">
                 <div className="p-7 sm:p-8 rounded-2xl bg-gradient-to-b from-[#07132a]/95 to-[#040c1d]/95 border border-blue-900/40 text-center shadow-[0_0_30px_rgba(37,99,235,0.12)]">
-                  <div className="w-16 h-16 rounded-2xl bg-blue-600/15 border border-blue-500/30 flex items-center justify-center mx-auto mb-4 shadow-inner">
-                    <Search className="w-8 h-8 text-sky-400" />
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-600/25 to-sky-500/10 border border-sky-400/30 flex items-center justify-center mx-auto mb-3.5 shadow-[0_0_20px_rgba(56,189,248,0.2)]">
+                    <Search className="w-7 h-7 text-sky-400 drop-shadow-[0_0_8px_rgba(56,189,248,0.6)]" />
                   </div>
 
-                  <h3 className="text-base sm:text-lg font-bold text-white tracking-tight">
-                    Search Public Information
+                  <h3 className="text-lg sm:text-xl font-extrabold text-white tracking-tight">
+                    Search{' '}
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-cyan-300">
+                      Public Information
+                    </span>
                   </h3>
 
                   <p className="text-xs text-slate-400 mt-2 leading-relaxed max-w-xs mx-auto">
