@@ -7,8 +7,8 @@ interface ApiPromoCardProps {
 
 export const ApiPromoCard: React.FC<ApiPromoCardProps> = ({ showToast }) => {
   const [copied, setCopied] = useState(false);
-  // Example API snippet (not the private production key, matching user request)
-  const exampleEndpoint = 'https://api.uidfind.net/api/v1/query.php?key=YOUR_API_KEY&number=01515224058';
+  // Dummy example endpoint to protect real API credentials from being copied
+  const exampleEndpoint = 'https://api.example.com/api/v1/query.php?key=YOUR_API_KEY&number=017XXXXXXXX';
 
   const handleCopy = () => {
     navigator.clipboard.writeText(exampleEndpoint);
@@ -59,7 +59,7 @@ export const ApiPromoCard: React.FC<ApiPromoCardProps> = ({ showToast }) => {
               GET
             </span>
             <span className="font-mono text-[11px] text-slate-300 truncate">
-              https://api.uidfind.net/api/v1/query.php?key=...
+              https://api.example.com/api/v1/query.php?key=YOUR_API_KEY&number=017XXXXXXXX
             </span>
           </div>
 

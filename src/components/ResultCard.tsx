@@ -8,7 +8,6 @@ import {
   RotateCcw,
   Globe,
   Sparkles,
-  Lock,
 } from 'lucide-react';
 import { LookupResult } from '../types';
 
@@ -120,16 +119,6 @@ Gender: ${result.gender}`;
               </span>
             </div>
           </div>
-
-          {/* Unlisted notice */}
-          {!hasPublicProfile && (
-            <div className="mt-3 p-2.5 rounded-xl bg-blue-950/40 border border-blue-800/40 text-left flex items-start gap-2 text-[11px] text-slate-300">
-              <Lock className="w-4 h-4 text-sky-400 shrink-0 mt-0.5" />
-              <p>
-                এই নাম্বারের নাম পাবলিক ডাটাবেজে উন্মুক্ত নয় (Private)। তবে BTRC বরাদ্দকৃত সিম অপারেটর সংক্রান্ত তথ্য নিচে দেখানো হয়েছে।
-              </p>
-            </div>
-          )}
 
           {/* Action Buttons: Call Now & Copy */}
           <div className="mt-4 grid grid-cols-2 gap-2">

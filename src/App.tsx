@@ -41,9 +41,10 @@ export default function App() {
 
       if (response.isRateLimited) {
         setRateLimitNotice(
-          'API-এর রিকোয়েস্ট লিমিট শেষ হয়েছে। অনুগ্রহ করে একটু পর আবার চেষ্টা করুন।'
+          response.rateLimitMessage ||
+            'আপনার API Key-এর ফ্রি প্ল্যানে প্রতি ঘণ্টায় ৫০টি রিকোয়েস্টের লিমিট শেষ হয়েছে (50 req/hour limit reached)। টেলিগ্রাম @H6679_0 থেকে আনলিমিটেড প্ল্যান নিতে পারেন বা একটু পর চেষ্টা করতে পারেন।'
         );
-        showToast('⚠️ লিমিট শেষ হয়েছে! একটু পর আবার চেষ্টা করুন।');
+        showToast('⚠️ API লিমিট শেষ হয়েছে (৫০ রিকোয়েস্ট/ঘণ্টা)');
       } else {
         showToast('Public records retrieved successfully');
       }
