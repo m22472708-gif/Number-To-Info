@@ -1,0 +1,6 @@
+{
+  "name": "NumIntel - Phone Number Intelligence & Lookup",
+  "description": "Global phone number lookup, carrier detection, spam risk assessment, caller identification, and batch validation with Bengali and English support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
