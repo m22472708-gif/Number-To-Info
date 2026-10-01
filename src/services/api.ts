@@ -256,7 +256,7 @@ export async function lookupNumberOrUid(
     });
 
     if (proxyResp.ok) {
-      const proxyJson = await proxyResp.json();
+      const proxyJson = await proxyResp.json().catch(() => null);
       if (proxyJson?.success && proxyJson?.data) {
         const d = proxyJson.data;
         if (d.name && d.name.trim().length > 0) {
